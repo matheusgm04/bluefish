@@ -1,0 +1,129 @@
+/* Breakpoint */
+@media (max-width: 999px){
+
+    #btn-mobile{
+        display: block; /*para mostrar o botão 'hamburger' */
+    }
+
+    #menu{
+        display: block; /* para mostrar o menu */
+        position: absolute;
+        width: 100%;
+        top: 115px;
+        right: 0px;
+        background-color: #0C5267;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000; /* Garante que o menu versão mobile vai ficar por cima de todos que estão na tela */
+        overflow-y: hidden; /* propriedade que determina o conteúdo que será exibido enquanto eixo y (altura) - renderizando ou não uma barra de rolagem*/
+
+    }
+
+    #nav.active #menu{ /* Quando o nav estiver ativo - as seguinte propriedades serão aplicadas ao menu*/
+        height: calc(100vh - 115px);
+        visibility: visible; /* propriedade que determina o elemento como visível */
+        overflow-y: auto; /* para caso o menu tenha mais itens, a barra de rolagem aparecer automaticamente */
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 2rem;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border:none;
+        background: none;
+        cursor:pointer;
+        gap: .5rem;
+    }
+
+    #hamburger{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: white;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor; /* currentColor copia para outras propriedades do mesmo seletor o valor da propriedade color*/
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform:rotate(135deg);  
+    }
+
+    #nav.active #hamburger::after {
+        transform:rotate(-135deg);
+        top: -7px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h1 {
+        position: flex;
+    }
+
+    #img-ilustration{
+        display: none;
+    }
+
+    #bnt-form{
+        display: block;
+        position: relative;
+        float: right;
+        bottom: 30px;
+        right: 15px;
+        border:none;
+        background: none;
+        cursor:pointer;
+    }
+
+    #bnt-form a {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 530px){
+    html{
+        font-size: 50%;
+    }
+
+    li{
+        font-size: 1.2 rem;
+    }
+
+    img{
+        width: 55%;
+    }
+}
+
+@media (max-width: 400px){
+    html{
+        font-size: 40%;
+    }
+
+    li{
+        font-size: 1.4 rem;
+    }
+}

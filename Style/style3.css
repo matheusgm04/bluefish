@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5 rem;
+  background: linear-gradient(
+      222.42deg,
+      rgba(106, 164, 188, 0.5) 0.22%,
+      rgba(0, 0, 0, 0) 113.7%
+    ),
+    #0c5267;
+  color: rgb(255, 255, 255);
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logogo {
+  position: flex;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+#nav {
+  display: absolute;
+  align-items: center;
+  gap: 40px;
+  font-family: "poppins", normal;
+
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#img-ilustration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -8%;
+  left: 28%;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+}
+
+li {
+  margin-left: 70px;
+}
+
+a {
+  color: white;
+}
+
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #AEDEF8;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+#inscreva-se-btn {
+  border: 2px solid #0c5267;
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+}
+
+#inscreva-se-btn:hover {
+  background-color: #7c69ff;
+  color: white;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 100%;
+  height: calc(100vh - 190px);
+}
+
+.conteudo {
+  margin-top: 80px;
+  width: 40%;
+}
+
+.main-imagem{
+  position: relative;
+  width: 45%;
+  display: flex;
+
+}
+
+h1 {
+  margin-left: 100px;
+  font-family: "Poppins", Bold;
+  font-weight: 600px;
+  font-size: 4rem;
+  line-height: 7rem;
+  width: 100%;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+
+#p1 {
+  font-family: "Poppins", Normal;
+  color: #c7e6f0;
+  margin-left: 100px;
+  font-weight: 400px;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  width: 100%;
+}
+
+
+
