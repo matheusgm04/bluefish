@@ -1,11 +1,36 @@
-/* Breakpoint */
 @media screen and (max-width: 999px) {
+  header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  #logo-a {
+    display: flex;
+    width: fit-content !important;
+  }
+
+  #logogo {
+    width: 155px;
+    height: 57.5px;
+    margin: 0;
+  }
+
   #btn-mobile {
     display: flex;
     position: absolute;
     right: 5%;
     z-index: 5;
     top: 40%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
   }
 
   body {
@@ -43,16 +68,6 @@
     margin: 0;
   }
 
-  #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-  }
-
   #hamburger {
     display: block;
     border-top: 2px solid;
@@ -86,97 +101,54 @@
   }
 
   main {
+    display: flex;
     flex-direction: column;
   }
 
-  h1 {
-    width: 100%;
-  }
-
-  h1,
-  #p1,
-  #p2,
-  #iapp,
-  p {
-    margin-left: 0;
-    margin-right: 0;
-    position: relative;
+  body {
+    overflow: auto;
   }
 
   .conteudo {
     width: 100%;
-    padding: 0 4rem;
     margin-top: 2rem;
-    height: 100%;
+    padding: 0 4rem;
+  }
+
+  h1,
+  #p1,
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .main-imagem {
+    width: 100%;
+    padding: 0 4rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #img-ilustration {
-    display: none;
-  }
-
-  #iapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  header {
     position: relative;
+    top: 0;
+    left: 0;
+    max-width: 800px;
+    max-height: 400px;
+  }
+
+  .bbbs {
+    right: 2%;
+    bottom: -30%;
+    max-width: 80px;
+  }
+
+  .bbbs img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-  }
-
-  #logo-a {
-    display: flex;
-    width: fit-content !important;
-  }
-
-  #logogo {
-    width: 155px;
-    height: 57.5px;
-    margin: 0;
-  }
-
-  #bnt-form {
-    display: block;
-    position: relative;
-    float: right;
-    bottom: 30px;
-    right: 15px;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  #bnt-form a {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 530px) {
-  html {
-    font-size: 50%;
-  }
-
-  li {
-    font-size: 1.2 rem;
-  }
-
-  img {
-    width: 55%;
-  }
-}
-
-@media (max-width: 400px) {
-  html {
-    font-size: 40%;
-  }
-
-  li {
-    font-size: 1.4 rem;
+    height: 100%;
   }
 }
